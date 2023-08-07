@@ -25,7 +25,7 @@ ideas = [
     "Usar bolsas reutilizables en lugar de bolsas plásticas de un solo uso",
     "Convertir objetos plásticos viejos en nuevos productos útiles",
     "Comprar productos con menos envases plásticos y usar contenedores recargables",
-    "Informar a otros sobre la importancia del reciclaje de plástico y la reducción de su uso"
+    "Informar a otros sobre la importancia del reciclaje de plástico y la reducción de su uso",
     "Utilizar plásticos biodegradables y compostarlos en lugar de desecharlos",
     "Reciclar papel y combinarlo con plástico derretido para hacer papel reciclado",
     "Cultivar tus propias frutas y verduras puede reducir el uso de envases plásticos",
@@ -36,12 +36,24 @@ ideas = [
     "Participar en limpiezas comunitarias para eliminar plásticos de entornos naturales",
     "Optar por opciones reutilizables o biodegradables",
     "Apoyar iniciativas y legislaciones locales para reducir el uso de plásticos",
-    "Promover la conciencia y la acción sostenible en la comunidad"
+    "Promover la conciencia y la acción sostenible en la comunidad",
+    "Fomentar el uso de botellas de agua reutilizables",
+    "Utilizar pajitas de metal o bambú en lugar de pajitas de plástico",
+    "Reemplazar utensilios de plástico con alternativas de acero inoxidable o madera",
+    "Evitar el uso de envoltorios de plástico al transportar alimentos",
+    "Comprar productos de segunda mano en lugar de nuevos para reducir el uso de embalajes",
+    "Apoyar negocios locales que utilizan envases biodegradables",
+    "Crear una campaña educativa sobre el impacto del plástico en los océanos",
+    "Desarrollar un programa de recolección de plásticos en áreas rurales",
+    "Utilizar contenedores de vidrio en lugar de plástico para almacenar alimentos",
+    "Fomentar el uso de bolsas de tela para la compra de alimentos a granel",
+    "Incentivar a las empresas a adoptar prácticas de embalaje sostenibles",
+    "Organizar eventos de reutilización y trueque de objetos en la comunidad",
 ]
+
 
 @client.command()
 async def Ideas(ctx):
-    print(random.choice(ideas))
     await ctx.send(random.choice(ideas))
 
 @client.command()
@@ -89,4 +101,16 @@ server_info.description = "This command displays detailed information about the 
 # Setting the command brief for the 'server_info' command (a shorter description for use in the default help command)
 server_info.brief = "Displays server information."
 
-client.run("MTEyOTA5MjQ5NzIzMTA2OTI0NA.GKjAKA.XdBCh7CofcIX1arUp4DD_rb0gxgo6_kWpMzhQM")
+# Setting the command description for the 'server_info' command
+Ideas.description = "This command gives you an idea para luchar contra la contaminación."
+
+# Setting the command brief for the 'server_info' command (a shorter description for use in the default help command)
+Ideas.brief = "Gives an Idea."
+
+# Setting the command description for the 'server_info' command
+Bidon.description = "This command te dice qué contiene cada bidón de reciclaje dependiendo de qué color escribes."
+
+# Setting the command brief for the 'server_info' command (a shorter description for use in the default help command)
+Bidon.brief = "Dice que contiene cada bidón."
+
+client.run("MTEyOTA5MjQ5NzIzMTA2OTI0NA.GMyHed.VbFGGRRjqJl5aaGe0IIwy_zLGn5XJWiL6GJxIw")
