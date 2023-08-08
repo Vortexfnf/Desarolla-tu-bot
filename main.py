@@ -167,7 +167,7 @@ Airborne_Allergens = "Se refiere a partículas biológicas como polen, esporas d
 Acid_Rain = "Se refiere a la precipitación de lluvia con un pH más bajo de lo normal debido a la emisión de dióxido de azufre y óxidos de nitrógeno en la atmósfera. La lluvia ácida puede dañar ecosistemas acuáticos, suelos, edificios y cultivos, y contribuir a la degradación del medio ambiente."
 
 @client.command()
-async def contamination(ctx, type = "GENERAL"):
+async def contaminacion(ctx, type = "GENERAL"):
     if type.upper() == "GENERAL":
         await ctx.send(general)
     if type.upper() == "AIRE":
@@ -234,7 +234,7 @@ Airborne_Allergens_en = "Airborne allergens refer to biological particles like p
 Acid_Rain_en = "Acid rain refers to rain precipitation with a lower pH than normal due to the emission of sulfur dioxide and nitrogen oxides into the atmosphere. Acid rain can damage aquatic ecosystems, soils, buildings, crops, and contribute to environmental degradation."
 
 @client.command()
-async def contaminacion(ctx, type = "GENERAL"):
+async def contamination(ctx, type = "GENERAL"):
     if type.upper() == "GENERAL":
         await ctx.send(general)
     if type.upper() == "AIR":
